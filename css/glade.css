@@ -1,0 +1,45 @@
+body {
+    background-image: url("../images/sky-bg.jpg");
+    background-repeat: repeat;
+}
+.first-row {
+    margin-top: 15px;
+}
+.stretched-image {
+    height: 100%;
+    width: 100%;
+}
+.my-heading-font {
+    font-size: 1.5em;
+}
+.map-heading {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+.panel-title {
+    font-weight: bold;
+}
+.flight-info-table {
+    margin-top: 15px;
+}
+.entertainment-icon {
+    font-size: 1.5em;
+}
+#hidden-entertainment-row {
+    display:none;
+}
+
+.entertainment-row{
+    margin-top: 25px;
+}
+
+#hidden-flights-row {
+    display:none;
+}
+.panel{
+    opacity:0.9;
+}

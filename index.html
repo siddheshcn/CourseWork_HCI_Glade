@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Glade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/ico" href="images/plane-flight-icon.png">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/glade.css" rel=stylesheet>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row first-row">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Boarding Pass
+                            <p class="text-danger pull-right">Delayed [ 15 mins ]</p>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <p class="my-heading-font">Air India Flight
+                            <strong>
+                                <span class="text-primary pull-right">[ AI - 678 ]</span>
+                            </strong>
+                        </p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 vertical-align">
+                                    <h4>BOM</h4>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="img">
+                                        <img class="stretched-image" src="images/plane-route.png">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 vertical-align">
+                                    <h4>CCJ</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table text-center table-bordered flight-info-table">
+                            <thead>
+                                <th class="text-center">Departure</th>
+                                <th class="text-center">Terminal</th>
+                                <th class="text-center">Seat</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2:00 pm
+                                        <span class="text-danger">( 2:15 pm )</span>
+                                    </td>
+                                    <td>1A</td>
+                                    <td>16 - F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Route to Airport
+                            <span class="glyphicon glyphicon-road pull-right"></span>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="img">
+                            <img class="stretched-image" src="images/map-to-airport.JPG">
+                        </div>
+                        <p class="my-heading-font map-heading">Estimated Time:
+                            <strong>
+                                <span class="text-success">45 mins</span>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" onclick="showHiddenFlights()">
+                        <h3 class="panel-title">Connecting Flights
+                            <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <p class="my-heading-font">JetLite
+                                <span class="pull-right">[ 6C - 785 ]</span>
+                            </p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-3 vertical-align">
+                                        <h4>BOM</h4>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="img">
+                                            <img class="stretched-image" src="images/plane-route.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 vertical-align">
+                                        <h4>CCJ</h4>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-4 vertical-align">
+                                        <h5>2:10 pm</h5>
+                                    </div>
+                                    <div class="col-xs-8 ">
+                                        <h5>
+                                            <p class="pull-right">Seats Available
+                                                <strong class="text-danger ">(06)</strong>
+                                            </p>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="hidden-flights-row">
+                            <hr/>
+                            <div>
+                                <p class="my-heading-font">JetKonnect
+                                    <span class="pull-right">[ JK - 786 ]</span>
+                                </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>BOM</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="img">
+                                                <img class="stretched-image" src="images/plane-route.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>CCJ</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-4 vertical-align">
+                                            <h5>2:45 pm</h5>
+                                        </div>
+                                        <div class="col-xs-8 ">
+                                            <h5>
+                                                <p class="pull-right">Seats Available
+                                                    <strong class="text-danger ">(15)</strong>
+                                                </p>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div>
+                                <p class="my-heading-font">SpiceJet
+                                    <span class="pull-right">[ SJ - 592 ]</span>
+                                </p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>BOM</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="img">
+                                                <img class="stretched-image" src="images/plane-route.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>CBB</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>CBB</h4>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="img">
+                                                <img class="stretched-image" src="images/plane-route.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 vertical-align">
+                                            <h4>CCJ</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-4 vertical-align">
+                                            <h5>3:30 pm</h5>
+                                        </div>
+                                        <div class="col-xs-8 ">
+                                            <h5>
+                                                <p class="pull-right">Seats Available
+                                                    <strong class="text-danger ">(08)</strong>
+                                                </p>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" onclick="toggleExtraRow()">
+                        <h3 class="panel-title">Entertainment
+                            <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                        </h3>
+                    </div>
+                    <div class="panel-body text-warning">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-xs-3">
+                                    <span class="glyphicon glyphicon-cutlery entertainment-icon"></span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span class="glyphicon glyphicon glyphicon-headphones entertainment-icon"></span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span class="glyphicon glyphicon-shopping-cart entertainment-icon"></span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span class="glyphicon glyphicon-film entertainment-icon"></span>
+                                </div>
+                            </div>
+                            <div id="hidden-entertainment-row">
+                                <div class="row text-center entertainment-row">
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-book entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-earphone entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-envelope entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-glass entertainment-icon"></span>
+                                    </div>
+                                </div>
+                                <div class="row text-center entertainment-row">
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-stats entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-user entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-globe entertainment-icon"></span>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span class="glyphicon glyphicon-picture entertainment-icon"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function toggleExtraRow() {
+            $('#hidden-entertainment-row').slideToggle('fast');
+        }
+
+        function showHiddenFlights() {
+            $('#hidden-flights-row').slideToggle('fast');
+        }
+    </script>
+</body>
+
+</html>
