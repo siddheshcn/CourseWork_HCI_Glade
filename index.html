@@ -11,7 +11,29 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="pnr-entry">
+        <form class="form-signin" role="form">
+            <h1 class="form-signin-heading text-center" style="color:white;">Welcome!</h1>
+            <div class="img pnr-screen-image">
+                <img class="center-block" src="images/plane-flight-icon.png">
+            </div>
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="form-group">
+                        <input type="text" class="form-control pnr-text" style="height:50px;" placeholder="PNR Number" required autofocus>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block pnr-button" style="height:50px;" onclick="showApp()">
+                            <span class="glyphicon glyphicon-chevron-right text-center"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container" id="main-app">
         <div class="row first-row">
             <div class="col-sm-6">
                 <div class="panel panel-default">
@@ -199,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-sm-6">
                 <div class="panel panel-default">
                     <div class="panel-heading" onclick="toggleExtraRow()">
@@ -269,6 +291,11 @@
 
             function showHiddenFlights() {
                 $('#hidden-flights-row').slideToggle('fast');
+            }
+
+            function showApp() {
+                $('#pnr-entry').hide();
+                $('#main-app').show();
             }
         </script>
 </body>

@@ -29,16 +29,31 @@ body {
     font-size: 1.5em;
 }
 #hidden-entertainment-row {
-    display:none;
+    display: none;
 }
-
-.entertainment-row{
+.entertainment-row {
     margin-top: 25px;
 }
-
 #hidden-flights-row {
-    display:none;
+    display: none;
 }
-.panel{
-    opacity:0.9;
+.panel {
+    opacity: 0.9;
+}
+#main-app {
+    display: none;
+}
+#pnr-entry{
+    margin-top:35px;
+}
+.pnr-screen-image {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.pnr-button{
+    margin-left:0px;
+    font-size:1.2em;
+}
+.pnr-text{
+    font-size:1.2em;
 }
